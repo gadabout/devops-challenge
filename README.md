@@ -55,7 +55,7 @@ Your task is to deploy this application to a Kubernetes cluster in your local en
 
 ## How to submit the challenge
 
-1. **Create a Private Repository**: Create a new **private repository** in your own Github user
+1. **Create a Private Repository**: Create a new **private repository** in your own Github user (do not make a public fork)
 2. **Commit your changes**: Clone this repository and commit your changes to your **private repository**
 3. **Write some instructions**: Write clear instructions in a `DEPLOYMENT.md` file on how to reproduce your deployment
 4. **Add Collaborators**: Invite the following GitHub users as collaborators:
