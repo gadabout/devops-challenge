@@ -45,12 +45,13 @@ dot -Tpng architecture.dot -o architecture.png
 
 Your task is to deploy this application to a Kubernetes cluster in your local environment and provide instructions for reproduction on our own computers. The deployment should meet the following criteria:
 
-1. **Kubernetes Deployment**: Deploy all components to a local Kubernetes cluster. You are free to choose any Kubernetes flavor that you are comfortable with, like `minikube`, `k3s`, `kind`, etc.
-2. **IaC tooling**: Use Infrastructure as Code (IaC) tooling of your choice to deploy the application. This could be `Terraform`, `Pulumi`, `Crossplane`, `Ansible`, `Helm`, etc. The idea here is to use some IaC tool to orchestrate all the pieces together, this means that you should not provide just raw Kubernetes .yaml files and expect us to manually run `kubectl` commands to deploy the application. Shell scripting is fine to automate some of the commands that we would have to run manually, but please avoid using it solely to deploy the application, make sure you use an IaC tool to deploy the application, like Terraform.
-3. **Working Application**: Both voting and results functionality must work end-to-end, make sure there are no errors shown in the UI
-4. **Database**: PostgreSQL container should be deployed in the same cluster
-5. **Documentation**: Provide clear instructions for reproducing your deployment and accessing the application
-6. **Accessibility**: The UI should be accessible via `http://{SOME_URL}:{PORT}` (don't worry about HTTPS)
+1. Make a fork of this repository.  Do not make your repo public.
+2. **Kubernetes Deployment**: Deploy all components to a local Kubernetes cluster. You are free to choose any Kubernetes flavor that you are comfortable with, like `minikube`, `k3s`, `kind`, etc.
+3. **IaC tooling**: Use Infrastructure as Code (IaC) tooling of your choice to deploy the application. This could be `Terraform`, `Pulumi`, `Crossplane`, `Ansible`, `Helm`, etc. The idea here is to use some IaC tool to orchestrate all the pieces together, this means that you should not provide just raw Kubernetes .yaml files and expect us to manually run `kubectl` commands to deploy the application. Shell scripting is fine to automate some of the commands that we would have to run manually, but please avoid using it solely to deploy the application, make sure you use an IaC tool to deploy the application, like Terraform.
+4. **Working Application**: Both voting and results functionality must work end-to-end, make sure there are no errors shown in the UI
+5. **Database**: PostgreSQL container should be deployed in the same cluster
+6. **Documentation**: Provide clear instructions for reproducing your deployment and accessing the application
+7. **Accessibility**: The UI should be accessible via `http://{SOME_URL}:{PORT}` (don't worry about HTTPS)
 
 
 ## How to submit the challenge
